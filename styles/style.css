@@ -105,6 +105,10 @@ h1 {
   border: 1px solid var(--secondary-color);
 }
 
+.btn-primary {
+  --bs-btn-active-bg: var(--accent-one);
+}
+
 #testimonials {
   background-color: var(--primary-color);
 }
