@@ -4,42 +4,45 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>InstaCat</title>
-
-    <link rel="shortcut icon" href="images/icon/cat.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="./assets/icons/cat.ico" type="image/x-icon">
+    <!-- bootstrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="/styles/style.css" />
   </head>
 
   <body>
     <!-- Title -->
-    <section id="title" class="gradient-background">
-      <div class="container col-xxl-8 px-4 pb-5 pb-lg-0">
+    <section id="title" class="gradient-background p-3 p-lg-0">
+      <div class="container col-xxl-8 px-4">
         <div class="row flex-lg-row-reverse align-items-center g-5">
-          <div class="col-lg-6 mb-0 pb-0">
+          <div class="col-12 col-md-6 col-lg-6">
+            <div class="outer-circle">
+              <div class="inner-circle"></div>
+            </div>
             <img
-              src="./images/phone-cat.png"
-              class="d-block mx-lg-auto img-fluid"
+              src="./assets/images/Cat/Gemini-generated-cat-in-phone-rbackground.png"
+              class="cat-phone d-block mx-lg-auto img-fluid"
               alt="Bootstrap Themes"
               width="700"
               height="500"
               loading="lazy"
             />
           </div>
-          <div class="col-lg-6">
-            <h1
-              class="display-5 fw-bold text-body-emphasis lh-1 mb-3 text-md-center mt-0"
-            >
-              Meet new and interesting cats nearby.
+          <div class="col-md-6">
+            <h1 class="display-5 lh-1 mb-3">
+              Let your cat experience connection worldwide.
             </h1>
-
-            <div
-              class="d-grid gap-2 d-md-flex justify-content-md-start justify-content-md-center m-md-3"
-            >
+            <p class="lead">
+              Share some cute cat pictures and connect with fellow cat lovers
+              worldwide through dedicated social media app called InstaCat,
+              downloadable from the Apple App Store and Google Play Store.
+            </p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
               <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -53,7 +56,7 @@
                     d="M14.222 9.374c1.037-.61 1.037-2.137 0-2.748L11.528 5.04 8.32 8l3.207 2.96 2.694-1.586Zm-3.595 2.116L7.583 8.68 1.03 14.73c.201 1.029 1.36 1.61 2.303 1.055l7.294-4.295ZM1 13.396V2.603L6.846 8 1 13.396ZM1.03 1.27l6.553 6.05 3.044-2.81L3.333.215C2.39-.341 1.231.24 1.03 1.27Z"
                   />
                 </svg>
-                PlayStore
+                Playstore
               </button>
               <button
                 type="button"
@@ -74,25 +77,26 @@
                     d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43Zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282Z"
                   />
                 </svg>
-                Appstore
+                Apple
               </button>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- Features -->
+
+    <!-- Feature -->
     <section id="features">
       <div class="container px-4 py-5" id="hanging-icons">
-        <div class="row g-4 my-5 row-cols-1 row-cols-lg-3">
+        <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
           <div class="col d-flex align-items-start">
             <div
-              class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3"
+              class="icon-square text-body-emphasis d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 height="30"
-                fill="currentColor"
+                fill="#fef4ea"
                 class="bi bi-check2-circle"
                 viewBox="0 0 16 16"
               >
@@ -105,21 +109,21 @@
               </svg>
             </div>
             <div>
-              <h3 class="fs-2 text-body-emphasis">Interactions</h3>
+              <h3 class="fs-2">User Friendly</h3>
               <p>
-                Have a great interaction with other cats and their public post
-                worldwide.
+                Offers intuitive and easy to navigate website layout that user
+                will surely love.
               </p>
             </div>
           </div>
           <div class="col d-flex align-items-start">
             <div
-              class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3"
+              class="icon-square text-body-emphasis d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 height="30"
-                fill="currentColor"
+                fill="#fef4ea"
                 class="bi bi-mortarboard"
                 viewBox="0 0 16 16"
               >
@@ -132,18 +136,21 @@
               </svg>
             </div>
             <div>
-              <h3 class="fs-2 text-body-emphasis">Certified Tricks</h3>
-              <p>Learn some tricks and selfies from the professionals.</p>
+              <h3 class="fs-2">Elite Clientele</h3>
+              <p>
+                Created by the best developers worlwide with top model cats
+                known.
+              </p>
             </div>
           </div>
           <div class="col d-flex align-items-start">
             <div
-              class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3"
+              class="icon-square text-body-emphasis d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 height="30"
-                fill="currentColor"
+                fill="#fef4ea"
                 class="bi bi-arrow-through-heart"
                 viewBox="0 0 16 16"
               >
@@ -154,138 +161,377 @@
               </svg>
             </div>
             <div>
-              <h3 class="fs-2 text-body-emphasis">Connections</h3>
-              <p>Provide more connection by interaction with other cats.</p>
+              <h3 class="fs-2">Share-Connect</h3>
+              <p>
+                Established connection and interaction for each cat lovers and
+                even cats to interact with the system.
+              </p>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <hr />
-    <!-- Testimonial -->
-    <section id="testimonial" class="container">
-      <div class="row">
-        <div class="statement d-flex flex-column align-items-center">
-          <h2 class="text-center">
-            "Even though I am introverted, I get bored. I need to know others to
-            settle my territory. 💥 I am grateful I found this InstaCat 💪"
-          </h2>
 
-          <img
-            src="./images/cat-selfie-image.jpg"
-            alt="profile"
-            class="profile-img mb-2 mt-5 d-flex justify-content-center"
-          />
+    <!-- Testimonials -->
+    <section id="testimonials" class="py-3">
+      <div class="my-5">
+        <div class="px-5 text-center">
+          <div class="container px-5">
+            <h2 style="color: #601228">
+              "Even though I am introverted, I get bored. I need to know others
+              to settle my territory. 💥 I am grateful I found this InstaCat 💪"
+            </h2>
+            <img
+              class="profile-img mt-5"
+              src="./assets/images/Cat/cat-selfie-image.jpg"
+              alt="Queen Shiania's Profile Picture"
+            />
+            <p class="mt-2">Queen Shania, Philippines</p>
+          </div>
 
-          <p>King Charles, Philippines</p>
-        </div>
-        <div class="partners row mb-5 p-0">
-          <img
-            class="col-12 col-lg-3"
-            src="./images/techcrunch.png"
-            height="30px"
-          />
-          <img
-            class="col-12 col-lg-3"
-            src="./images/mashable.png"
-            height="30px"
-          />
-          <img
-            class="col-12 col-lg-3"
-            src="./images/bizinsider.png"
-            height="30px"
-          />
-          <img class="col-12 col-lg-3" src="./images/tnw.png" height="100px" />
+          <div class="container mt-5">
+            <div class="row gap-0">
+              <div class="col-lg-3 col-12">
+                <img
+                  src="./assets/images/techcrunch.png"
+                  alt="techcrunch logo"
+                  height="30"
+                />
+              </div>
+              <div class="col-lg-3 col-12">
+                <img
+                  src="./assets/images/mashable.png"
+                  alt="mashable logo"
+                  height="30"
+                />
+              </div>
+              <div class="col-lg-3 col-12">
+                <img
+                  src="./assets/images/bizinsider.png"
+                  alt="bizinsider logo"
+                  height="30"
+                />
+              </div>
+              <div class="col-lg-3 col-12">
+                <img src="./assets/images/tnw.png" alt="tnw" height="30" />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
-    <hr />  
+
     <!-- Pricing -->
-    <section id="pricing">
-      <div class="pricing-header mt-5 pb-1 pb-md-1 text-center my-auto">
-        <h1 class="display-4 fw-normal text-body-emphasis">
-          A Plan for Every Cat's Needs
-        </h1>
-        <p class="fs-5 text-body-secondary">
-          Simple and fair price plans offered for you and your cat.
-        </p>
-      </div>
-      <main>
-        <div class="row row-cols-1 row-cols-md-3 mb-3 text-center p-0 m-5">
-          <div class="col">
-            <div class="card mb-4 rounded-3 shadow-sm">
-              <div class="card-header py-3">
-                <h4 class="my-0 fw-normal">Commoner</h4>
+    <section id="pricing" class="mt-3 mb-5">
+      <div class="container">
+        <div class="container">
+          <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+            <h2 class="display-4 fw-normal">Pricing</h2>
+            <p class="fs-5 text-body-secondary">
+              Quickly build an effective pricing table for your potential
+              customers with this Bootstrap example. It’s built with default
+              Bootstrap components and utilities with little customization.
+            </p>
+          </div>
+
+          <main>
+            <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+              <div class="col">
+                <div class="card mb-4 rounded-3 shadow-sm">
+                  <div class="card-header py-3">
+                    <h4 class="my-0 fw-normal">Free</h4>
+                  </div>
+                  <div class="card-body">
+                    <h2 class="card-title pricing-card-title">
+                      $0<small class="text-body-secondary fw-light">/mo</small>
+                    </h2>
+                    <ul class="list-unstyled mt-3 mb-4">
+                      <li>10 users included</li>
+                      <li>2 GB of storage</li>
+                      <li>Email support</li>
+                      <li>Help center access</li>
+                    </ul>
+                    <button type="button" class="w-100 btn btn-lg free-sign-up">
+                      Sign up for free
+                    </button>
+                  </div>
+                </div>
               </div>
-              <div class="card-body">
-                <h1 class="card-title pricing-card-title">
-                  $0<small class="text-body-secondary fw-light">/mo</small>
-                </h1>
-                <ul class="list-unstyled mt-3 mb-4">
-                  <li>10 users included</li>
-                  <li>2 GB of storage</li>
-                  <li>Email support</li>
-                  <li>Help center access</li>
-                </ul>
-                <button
-                  type="button"
-                  class="w-100 btn btn-lg btn-outline-primary"
-                >
-                  Sign up for free
-                </button>
+              <div class="col">
+                <div class="card mb-4 rounded-3 shadow-sm">
+                  <div class="card-header py-3">
+                    <h4 class="my-0 fw-normal">Pro</h4>
+                  </div>
+                  <div class="card-body">
+                    <h2 class="card-title pricing-card-title">
+                      $15<small class="text-body-secondary fw-light">/mo</small>
+                    </h2>
+                    <ul class="list-unstyled mt-3 mb-4">
+                      <li>20 users included</li>
+                      <li>10 GB of storage</li>
+                      <li>Priority email support</li>
+                      <li>Help center access</li>
+                    </ul>
+                    <button type="button" class="w-100 btn btn-lg btn-primary">
+                      Get started
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card card-special mb-4 rounded-3">
+                  <div class="card-header py-3">
+                    <h4 class="my-0 fw-normal">Enterprise</h4>
+                  </div>
+                  <div class="card-body">
+                    <h2 class="card-title pricing-card-title">
+                      $29<small class="text-body-secondary fw-light">/mo</small>
+                    </h2>
+                    <ul class="list-unstyled mt-3 mb-4">
+                      <li>30 users included</li>
+                      <li>15 GB of storage</li>
+                      <li>Phone & email support</li>
+                      <li>Help center access</li>
+                    </ul>
+                    <button type="button" class="w-100 btn btn-lg btn-primary">
+                      Contact us
+                    </button>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col">
-            <div class="card mb-4 rounded-3 shadow-sm">
-              <div class="card-header py-3">
-                <h4 class="my-0 fw-normal">Elite</h4>
-              </div>
-              <div class="card-body">
-                <h1 class="card-title pricing-card-title">
-                  $15<small class="text-body-secondary fw-light">/mo</small>
-                </h1>
-                <ul class="list-unstyled mt-3 mb-4">
-                  <li>20 users included</li>
-                  <li>10 GB of storage</li>
-                  <li>Priority email support</li>
-                  <li>Help center access</li>
-                </ul>
-                <button type="button" class="w-100 btn btn-lg btn-primary">
-                  Get started
-                </button>
-              </div>
+            <h2 class="display-6 text-center mb-4">Compare plans</h2>
+            <div class="table-responsive">
+              <table class="table text-center">
+                <thead>
+                  <tr>
+                    <th style="width: 34%"></th>
+                    <th style="width: 22%">Free</th>
+                    <th style="width: 22%">Pro</th>
+                    <th style="width: 22%">Enterprise</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row" class="text-start">Public</th>
+                    <td>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-check2"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0"
+                        />
+                      </svg>
+                    </td>
+                    <td>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-check2"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0"
+                        />
+                      </svg>
+                    </td>
+                    <td>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-check2"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0"
+                        />
+                      </svg>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="text-start">Private</th>
+                    <td></td>
+                    <td>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-check2"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0"
+                        />
+                      </svg>
+                    </td>
+                    <td>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-check2"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0"
+                        />
+                      </svg>
+                    </td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <th scope="row" class="text-start">Permissions</th>
+                    <td>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-check2"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0"
+                        />
+                      </svg>
+                    </td>
+                    <td>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-check2"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0"
+                        />
+                      </svg>
+                    </td>
+                    <td>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-check2"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0"
+                        />
+                      </svg>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="text-start">Sharing</th>
+                    <td></td>
+                    <td>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-check2"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0"
+                        />
+                      </svg>
+                    </td>
+                    <td>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-check2"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0"
+                        />
+                      </svg>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="text-start">Unlimited members</th>
+                    <td></td>
+                    <td>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-check2"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0"
+                        />
+                      </svg>
+                    </td>
+                    <td>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-check2"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0"
+                        />
+                      </svg>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="text-start">Extra security</th>
+                    <td></td>
+                    <td></td>
+                    <td>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-check2"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0"
+                        />
+                      </svg>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
-          </div>
-          <div class="col">
-            <div class="card mb-4 rounded-3 shadow-sm border-primary">
-              <div class="card-header py-3 text-bg-primary border-primary">
-                <h4 class="my-0 fw-normal">King</h4>
-              </div>
-              <div class="card-body">
-                <h1 class="card-title pricing-card-title">
-                  $29<small class="text-body-secondary fw-light">/mo</small>
-                </h1>
-                <ul class="list-unstyled mt-3 mb-4">
-                  <li>30 users included</li>
-                  <li>15 GB of storage</li>
-                  <li>Phone and email support</li>
-                  <li>Help center access</li>
-                </ul>
-                <button type="button" class="w-100 btn btn-lg btn-primary">
-                  Contact us
-                </button>
-              </div>
-            </div>
-          </div>
+          </main>
         </div>
-      </main>
+      </div>
     </section>
+
     <!-- Footer -->
-    <section id="footer" class="gradient-background m-0 pt-5">
+    <footer class="gradient-background">
       <div class="container">
         <footer
-          class="row row-cols-1 row-cols-sm-1 row-cols-md-2  row-cols-lg-5 m-0 border-0 py-0"
+          class="text-center text-md-start row row-cols-1 row-cols-md-5 py-4"
         >
           <div class="col mb-3">
             <a
@@ -297,69 +543,47 @@
                 <use xlink:href="#bootstrap"></use>
               </svg>
             </a>
-            <p class="text-body-secondary">© InstaCat 2025</p>
+            <p class="text-body-secondary">©Yukwiczyczy 2025</p>
           </div>
           <div class="col mb-3"></div>
           <div class="col mb-3">
             <h5>Services</h5>
             <ul class="nav flex-column">
               <li class="nav-item mb-2">
-                <a href="#" class="nav-link p-0 text-body-secondary">Online Selling</a>
+                <a href="#" class="nav-link p-0 text-body-secondary">Fish Store</a>
               </li>
               <li class="nav-item mb-2">
                 <a href="#" class="nav-link p-0 text-body-secondary"
-                  >Advertisements</a
+                  >Catnips</a
                 >
               </li>
               <li class="nav-item mb-2">
-                <a href="#" class="nav-link p-0 text-body-secondary">Plans</a>
+                <a href="#" class="nav-link p-0 text-body-secondary">Kitten Playground</a>
               </li>
               <li class="nav-item mb-2">
-                <a href="#" class="nav-link p-0 text-body-secondary">Fish Auction</a>
+                <a href="#" class="nav-link p-0 text-body-secondary">Home For Cat Agent</a>
               </li>
               <li class="nav-item mb-2">
-                <a href="#" class="nav-link p-0 text-body-secondary">Purchasing Fish</a>
+                <a href="#" class="nav-link p-0 text-body-secondary">Fish Delivery</a>
               </li>
             </ul>
           </div>
           <div class="col mb-3">
-            <h5>Application</h5>
+            <h5>Contact Us</h5>
             <ul class="nav flex-column">
               <li class="nav-item mb-2">
-                <a href="#" class="nav-link p-0 text-body-secondary">InstaCat Post</a>
+                <a href="#" class="nav-link p-0 text-body-secondary">Posting Problem</a>
               </li>
               <li class="nav-item mb-2">
                 <a href="#" class="nav-link p-0 text-body-secondary"
-                  >Features</a
+                  >Account Problem</a
                 >
               </li>
               <li class="nav-item mb-2">
-                <a href="#" class="nav-link p-0 text-body-secondary">Enterprices</a>
+                <a href="#" class="nav-link p-0 text-body-secondary">Purchasing Problem</a>
               </li>
               <li class="nav-item mb-2">
-                <a href="#" class="nav-link p-0 text-body-secondary">Charity</a>
-              </li>
-              <li class="nav-item mb-2">
-                <a href="#" class="nav-link p-0 text-body-secondary">Fish Industries</a>
-              </li>
-            </ul>
-          </div>
-          <div class="col mb-3">
-            <h5>Customer Services</h5>
-            <ul class="nav flex-column">
-              <li class="nav-item mb-2">
-                <a href="#" class="nav-link p-0 text-body-secondary">Posting</a>
-              </li>
-              <li class="nav-item mb-2">
-                <a href="#" class="nav-link p-0 text-body-secondary"
-                  >Purchasing</a
-                >
-              </li>
-              <li class="nav-item mb-2">
-                <a href="#" class="nav-link p-0 text-body-secondary">Interaction</a>
-              </li>
-              <li class="nav-item mb-2">
-                <a href="#" class="nav-link p-0 text-body-secondary">FAQs</a>
+                <a href="#" class="nav-link p-0 text-body-secondary">Service Issue</a>
               </li>
               <li class="nav-item mb-2">
                 <a href="#" class="nav-link p-0 text-body-secondary">Report Bug</a>
@@ -368,7 +592,7 @@
           </div>
         </footer>
       </div>
-    </section>
+    </footer>
 
     <!-- Script -->
     <script
