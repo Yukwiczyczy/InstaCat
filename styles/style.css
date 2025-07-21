@@ -109,6 +109,12 @@ h1 {
   --bs-btn-active-bg: var(--accent-one);
 }
 
+.btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active {
+    color: var(--accent-one);
+    background-color: var(--accent-one);
+    border-color: var(--accent-one);
+}
+
 #testimonials {
   background-color: var(--primary-color);
 }
