@@ -110,7 +110,7 @@ h1 {
 }
 
 .btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active {
-    color: var(--accent-one);
+    color: var(--primary-color);
     background-color: var(--accent-one);
     border-color: var(--accent-one);
 }
